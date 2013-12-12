@@ -78,7 +78,7 @@ class Bat(object):
                 util.mkdir_p(self.VIMPYRE_PATH)
                 raw_pathogen = raw_urlopen.read()
                 pathogen = path.join(self.AUTOLOAD_PATH, 'pathogen.vim')
-                with open(pathogen, 'w') as f:
+                with open(pathogen, 'wb') as f:
                     f.write(raw_pathogen)
                 console('Catch done! Please add the following to your .vimrc:')
                 console('call pathogen#runtime_append_all_bundles("vimpyre")')
