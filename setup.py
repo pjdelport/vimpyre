@@ -159,4 +159,5 @@ Change Log
           'vimpyre = vimpyre.vimpyre:main',
           ],
       },
+      use_2to3=True,
       )
